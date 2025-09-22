@@ -43,6 +43,6 @@ Open analysis.md for the full Day 1 writeup and interpretation of results.
 
 Inspect saved scan results. Redact any sensitive data before publishing.
 
-## ⚠️ Safety & Ethics
+##  Safety & Ethics
 
 Only scan systems and networks you own or for which you have explicit permission. Packet captures and scan outputs may contain sensitive information — sanitize before sharing publicly.
