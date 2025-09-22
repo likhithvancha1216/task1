@@ -8,7 +8,7 @@ Date: 22 September 2025
 This Day 1 hands-on project demonstrates practical port-scanning exercises using Nmap. You’ll learn how to discover open ports, identify services running on those ports, and interpret scan results — fundamental skills for anyone exploring cybersecurity and network reconnaissance.
 
 ## 🗂️ Repository Structure
-port-scan-task1/
+port-scan-task1
 - analysis.md          -Detailed Day 1 report with findings and insights
 - README.md            -Project summary and instructions
 - outputs              -Saved Nmap outputs (.nmap, .xml, .gnmap, .txt)
