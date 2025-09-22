@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Scan executed by Nmap 7.98 on Mon Sep 22 16:54:28 2025 using: "C:\Program Files (x86)\Nmap\nmap.exe" -sT -sV -p- -T4 -oA outputs/host-10.204.197.132 10.204.197.132 -->
+<nmaprun scanner="nmap" args="&quot;C:\\Program Files (x86)\\Nmap\\nmap.exe&quot; -sT -sV -p- -T4 -oA outputs/host-10.204.197.132 10.204.197.132" start="1758540268" startstr="Mon Sep 22 16:54:28 2025" version="7.98" xmloutputversion="1.05">
+  <scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+  <verbose level="0"/>
+  <debugging level="0"/>
+  <host starttime="1758540269" endtime="1758540364">
+    <status state="up" reason="localhost-response" reason_ttl="0"/>
+    <address addr="10.204.197.132" addrtype="ipv4"/>
+    <hostnames>
+    </hostnames>
+    <ports>
+      <extraports state="closed" count="65519">
+        <extrareasons reason="conn-refused" count="65519" proto="tcp" ports="1-134,136,138,140-444,446-1041,1044-5039,5041-7679,7681-9011,9014-49663,49669-49676,49678-65535"/>
+      </extraports>
+
+      <port protocol="tcp" portid="135">
+        <state state="open" reason="syn-ack" reason_ttl="0"/>
+        <service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10">
+          <cpe>cpe:/o:microsoft:windows</cpe>
+        </service>
+      </port>
+
+      <port protocol="tcp" portid="137">
+        <state state="filtered" reason="admin-prohibited" reason_ttl="0"/>
+        <service name="netbios-ns" method="table" conf="3"/>
+      </port>
+
+      <port protocol="tcp" portid="139">
+        <state state="open" reason="syn-ack" reason_ttl="0"/>
+        <service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10">
+          <cpe>cpe:/o:microsoft:windows</cpe>
+        </service>
+      </port>
+
+      <port protocol="tcp" portid="445">
+        <state state="open" reason="syn-ack" reason_ttl="0"/>
+        <service name="microsoft-ds" method="table" conf="3"/>
+      </port>
+
+      <port protocol="tcp" portid="1042">
+        <state state="open" reason="syn-ack" reason_ttl="0"/>
+        <service name="afrog" servicefp="SF-Port1042-TCP:V=7.98%I=7%D=9/22%Time=68D131FC%P=i686-pc-windows-windows%r(GetRequest,27E,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nVary:\x20Origin\r\nContent-Security-Policy:\x20default-src\x20&apos;self&apos;\r\nX-DNS-Prefetch-Control:\x20off\r\nExpect-CT:\x20max-age=0\r\nX-Frame-Options:\x20SAMEORIGIN\r\nStrict-Transport-Security:\x20max-age=15552000;\x20includeSubDomains\r\nX-Download-Options:\x20noopen\r\nX-Content-Type-Options:\x20nosniff\r\nX-Permitted-Cross-Domain-Policies:\x20none\r\nReferrer-Policy:\x20no-referrer\r\nX-XSS-Protection:\x200\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20139\r\nDate:\x20Mon,\x2022\x20Sep\x202025\x2011:24:44\x20GMT\r\nConnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;en\&quot;&gt;\n&lt;head&gt;\n&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n&lt;title&gt;Error&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;pre&gt;Cannot\x20GET\x20/&lt;/pre&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n&quot;)%r(HTTPOptions,D2,&quot;HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\x20Origin,\x20Access-Control-Request-Headers\r\nAccess-Control-Allow-Methods:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDate:\x20Mon,\x2022\x20Sep\x202025\x2011:24:44\x20GMT\r\nConnection:\x20close\r\n\r\n&quot;)%r(RTSPRequest,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(RPCCheck,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(DNSVersionBindReqTCP,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(DNSStatusRequestTCP,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(Help,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(SSLSessionReq,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(TerminalServerCookie,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(TLSSessionReq,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(Kerberos,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(SMBProgNeg,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(X11Probe,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;);" method="table" conf="3"/>
+      </port>
+
+      <port protocol="tcp" portid="1043">
+        <state state="open" reason="syn-ack" reason_ttl="0"/>
+        <service name="boinc" servicefp="SF-Port1043-TCP:V=7.98%T=SSL%I=7%D=9/22%Time=68D13207%P=i686-pc-windows-windows%r(GetRequest,27E,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nVary:\x20Origin\r\nContent-Security-Policy:\x20default-src\x20&apos;self&apos;\r\nX-DNS-Prefetch-Control:\x20off\r\nExpect-CT:\x20max-age=0\r\nX-Frame-Options:\x20SAMEORIGIN\r\nStrict-Transport-Security:\x20max-age=15552000;\x20includeSubDomains\r\nX-Download-Options:\x20noopen\r\nX-Content-Type-Options:\x20nosniff\r\nX-Permitted-Cross-Domain-Policies:\x20none\r\nReferrer-Policy:\x20no-referrer\r\nX-XSS-Protection:\x200\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20139\r\nDate:\x20Mon,\x2022\x20Sep\x202025\x2011:24:55\x20GMT\r\nConnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;en\&quot;&gt;\n&lt;head&gt;\n&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n&lt;title&gt;Error&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;pre&gt;Cannot\x20GET\x20/&lt;/pre&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n&quot;)%r(HTTPOptions,D2,&quot;HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\x20Origin,\x20Access-Control-Request-Headers\r\nAccess-Control-Allow-Methods:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDate:\x20Mon,\x2022\x20Sep\x202025\x2011:24:55\x20GMT\r\nConnection:\x20close\r\n\r\n&quot;)%r(FourOhFourRequest,2E6,&quot;HTTP/1\.1\x20500\x20Internal\x20Server\x20Error\r\nVary:\x20Origin\r\nContent-Security-Policy:\x20default-src\x20&apos;self&apos;\x20blob:\x20127\.0\.0\.1:1042\x20127\.0\.0\.1:1043;script-src\x20&apos;self&apos;\x20&apos;unsafe-inline&apos;;style-src\x20&apos;self&apos;;connect-src\x20&apos;self&apos;\x20ws:\x20wss:\x20blob:\x20127\.0\.0\.1:1042\x20127\.0\.0\.1:1043\x20127\.0\.0\.1:9013\x20127\.0\.0\.1:9014;worker-src\x20&apos;self&apos;\x20blob:\x20127\.0\.0\.1:1042\x20127\.0\.0\.1:1043;img-src\x20&apos;self&apos;\x20data:\x20blob:\x20127\.0\.0\.1:1042\x20127\.0\.0\.1:1043\r\nX-DNS-Prefetch-Control:\x20off\r\nExpect-CT:\x20max-age=0\r\nX-Frame-Options:\x20SAMEORIGIN\r\nStrict-Transport-Security:\x20max-age=15552000;\x20includeSubDomains\r\nX-Download-Options:\x20noopen\r\nX-Content-Type-Options:\x20nosniff\r\nX-Permitted-Cross-Domain-Policies:\x20none\r\nReferrer-Policy:\x20no-referrer\r\nX-XSS-Protection:\x200\r\nDate:\x20Mon,\x2022\x20Sep\x202025\x2011:24:55\x20GMT\r\nConnection:\x20close\r\n\r\n&quot;);" tunnel="ssl" method="table" conf="3"/>
+      </port>
+
+      <port protocol="tcp" portid="5040">
+        <state state="open" reason="syn-ack" reason_ttl="0"/>
+      </port>
+
+      <port protocol="tcp" portid="7680">
+        <state state="open" reason="syn-ack" reason_ttl="0"/>
+        <service name="pando-pub" method="table" conf="3"/>
+      </port>
+
+      <port protocol="tcp" portid="9012">
+        <state state="open" reason="syn-ack" reason_ttl="0"/>
+        <service name="websocket" product="WebSocket++" version="0.8.1" tunnel="ssl" method="probed" conf="10">
+          <cpe>cpe:/a:zaphoyd:websocketpp:0.8.1</cpe>
+        </service>
+      </port>
+
+      <port protocol="tcp" portid="9013">
+        <state state="open" reason="syn-ack" reason_ttl="0"/>
+        <service name="websocket" product="WebSocket++" version="0.8.1" method="probed" conf="10">
+          <cpe>cpe:/a:zaphoyd:websocketpp:0.8.1</cpe>
+        </service>
+      </port>
+
+      <port protocol="tcp" portid="49664">
+        <state state="open" reason="syn-ack" reason_ttl="0"/>
+        <service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10">
+          <cpe>cpe:/o:microsoft:windows</cpe>
+        </service>
+      </port>
+
+      <port protocol="tcp" portid="49665">
+        <state state="open" reason="syn-ack" reason_ttl="0"/>
+        <service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10">
+          <cpe>cpe:/o:microsoft:windows</cpe>
+        </service>
+      </port>
+
+      <port protocol="tcp" portid="49666">
+        <state state="open" reason="syn-ack" reason_ttl="0"/>
+        <service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10">
+          <cpe>cpe:/o:microsoft:windows</cpe>
+        </service>
+      </port>
+
+      <port protocol="tcp" portid="49667">
+        <state state="open" reason="syn-ack" reason_ttl="0"/>
+        <service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10">
+          <cpe>cpe:/o:microsoft:windows</cpe>
+        </service>
+      </port>
+
+      <port protocol="tcp" portid="49668">
+        <state state="open" reason="syn-ack" reason_ttl="0"/>
+        <service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10">
+          <cpe>cpe:/o:microsoft:windows</cpe>
+        </service>
+      </port>
+
+      <port protocol="tcp" portid="49677">
+        <state state="open" reason="syn-ack" reason_ttl="0"/>
+        <service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10">
+          <cpe>cpe:/o:microsoft:windows</cpe>
+        </service>
+      </port>
+
+    </ports>
+    <times srtt="19" rttvar="40" to="100000"/>
+  </host>
+  <runstats>
+    <finished time="1758540364" timestr="Mon Sep 22 16:56:04 2025" summary="Scan completed on Mon Sep 22 16:56:04 2025; 1 IP address (1 host active) scanned in 95.54 seconds" elapsed="95.54" exit="success"/>
+    <hosts up="1" down="0" total="1"/>
+  </runstats>
+</nmaprun>
