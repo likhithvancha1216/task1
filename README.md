@@ -39,11 +39,9 @@ Organized outputs and commands to make the repository reproducible and shareable
 
 Read  README.md for setup and safety notes.
 
-Review commands.txt for the exact Nmap/TShark commands used.
-
 Open analysis.md for the full Day 1 writeup and interpretation of results.
 
-Inspect files in outputs/ for saved scan results. Redact any sensitive data before publishing.
+Inspect saved scan results. Redact any sensitive data before publishing.
 
 ## ⚠️ Safety & Ethics
 
