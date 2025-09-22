@@ -3,11 +3,11 @@
 Author: Vancha Likhith Bharadwaj Reddy
 Date: 22 September 2025
 
-## 🌟 Task Overview
+##  Task Overview
 
 This Day 1 hands-on project demonstrates practical port-scanning exercises using Nmap. You’ll learn how to discover open ports, identify services running on those ports, and interpret scan results — fundamental skills for anyone exploring cybersecurity and network reconnaissance.
 
-## 🗂️ Repository Structure
+##  Repository Structure
 port-scan-task1
 - 10.204.198.122.gnmap -Saved .gnmap results
 - 10.204.198.122.nmap  -Saved .nmap results
@@ -15,7 +15,7 @@ port-scan-task1
 - README.md            -Project summary and instructions
 - analysis.md          -Detailed Day 1 report with findings and insights
 
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 
 Nmap — network discovery and security auditing
 
@@ -23,7 +23,7 @@ Command Prompt / PowerShell — running scans on Windows
 
 Wireshark / TShark (optional) — packet capture and analysis
 
-## 📌 Key Highlights
+##  Key Highlights
 
 Performed basic and targeted port scans using Nmap.
 
@@ -35,7 +35,7 @@ Documented findings, risks, and remediation suggestions in a clear report.
 
 Organized outputs and commands to make the repository reproducible and shareable.
 
-## 🧭 How to use this repo
+##  How to use this repo
 
 Read  README.md for setup and safety notes.
 
