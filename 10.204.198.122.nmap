@@ -1,4 +1,26 @@
 # Nmap 7.98 scan initiated Mon Sep 22 16:54:28 2025 as: "C:\Program Files (x86)\Nmap\nmap.exe" -sT -sV -p- -T4 -oA outputs/host-10.204.197.132 10.204.197.132
-Host: 10.204.197.132 ()    Status: Up
-Host: 10.204.197.132 ()    Ports: 135/open/tcp//msrpc//Microsoft Windows RPC/, 137/filtered/tcp//netbios-ns///, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds?///, 1042/open/tcp//afrog?///, 1043/open/tcp//ssl|boinc?///, 5040/open/tcp/////, 7680/open/tcp//pando-pub?///, 9012/open/tcp//ssl|websocket//WebSocket++ 0.8.1/, 9013/open/tcp//websocket//WebSocket++ 0.8.1/, 49664/open/tcp//msrpc//Microsoft Windows RPC/, 49665/open/tcp//msrpc//Microsoft Windows RPC/, 49666/open/tcp//msrpc//Microsoft Windows RPC/, 49667/open/tcp//msrpc//Microsoft Windows RPC/, 49668/open/tcp//msrpc//Microsoft Windows RPC/, 49677/open/tcp//msrpc//Microsoft Windows RPC/    Ignored State: closed (65519)
-# Nmap done at Mon Sep 22 16:56:04 2025 -- 1 IP address (1 host up) scanned in 95.54 seconds
+
+Nmap scan report for 10.204.197.132
+Host is up (0.019s latency).
+Not shown: 65519 closed ports
+PORT      STATE    SERVICE         VERSION
+135/tcp   open     msrpc           Microsoft Windows RPC
+137/tcp   filtered netbios-ns
+139/tcp   open     netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp   open     microsoft-ds
+1042/tcp  open     afrog           (service fingerprinted)
+1043/tcp  open     boinc (ssl)     (service fingerprinted; SSL)
+5040/tcp  open     unknown
+7680/tcp  open     pando-pub       (service fingerprinted)
+9012/tcp  open     ssl/websocket   WebSocket++ 0.8.1
+9013/tcp  open     websocket       WebSocket++ 0.8.1
+49664/tcp open     msrpc           Microsoft Windows RPC
+49665/tcp open     msrpc           Microsoft Windows RPC
+49666/tcp open     msrpc           Microsoft Windows RPC
+49667/tcp open     msrpc           Microsoft Windows RPC
+49668/tcp open     msrpc           Microsoft Windows RPC
+49677/tcp open     msrpc           Microsoft Windows RPC
+
+Service Info: OS: Windows
+
+Nmap done: 1 IP address (1 host up) scanned in 95.54 seconds
