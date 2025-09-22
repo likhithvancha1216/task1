@@ -9,10 +9,11 @@ This Day 1 hands-on project demonstrates practical port-scanning exercises using
 
 ## 🗂️ Repository Structure
 port-scan-task1
-- analysis.md          -Detailed Day 1 report with findings and insights
+- 10.204.198.122.gnmap -Saved .gnmap results
+- 10.204.198.122.nmap  -Saved .nmap results
+- 10.204.198.122.xml   -Saved .xml results
 - README.md            -Project summary and instructions
-- outputs              -Saved Nmap outputs (.nmap, .xml, .gnmap, .txt)
-- commands.txt         -Exact commands used during the exercises
+- analysis.md          -Detailed Day 1 report with findings and insights
 
 ## 🛠️ Tools & Technologies
 
